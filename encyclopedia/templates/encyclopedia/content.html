@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ content_title }}
+{% endblock %}
+
+{% block body %}
+    <a href="edit/{{ content_title }}"><i class="fa-solid fa-wrench" style="color: #757575;"></i></a>
+    <br>
+    {{ content|safe }}
+{% endblock %}
